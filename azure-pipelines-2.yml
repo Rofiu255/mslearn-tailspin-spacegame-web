@@ -9,8 +9,6 @@ trigger:
 pool:
   vmImage: ubuntu-latest
   name: 'Default'
-  demands:
-    - Agent.Version -gtVersion 3.248.0
 
 variables:
   buildConfiguration: 'Release'
