@@ -11,9 +11,9 @@ pool:
 
 steps:
 - task: UseDotNet@2
-  displayName: 'Use .NET SDK 8.x'
+  displayName: 'Use .NET SDK 8.0'
   inputs:
-    version: '8.x'
+    version: '8.0'
 
 - task: Npm@1
   displayName: 'Run npm install'
