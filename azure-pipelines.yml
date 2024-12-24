@@ -26,7 +26,8 @@ steps:
 - task: gulp@1
   displayName: 'Run gulp task'
   inputs:
-    gulpFile: 'gulpfile.js'
+    gulpFile: 'Tailspin.SpaceGame.Web/gulpfile.js'
+    targets: 'min' 
 
 - script: 'echo "$(Build.DefinitionName), $(Build.BuildId), $(Build.BuildNumber)" > buildinfo.txt'
   displayName: 'Write build info'
